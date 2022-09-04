@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime superapp</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script defer src="./src/main.js" type="module"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form id="datecalc">
+            <h2>Калькулятор дат</h2>
+            <a href="#timer">Таймер</a>
+            <br>
+            <label>
+                <strong>Первая дата:</strong>
+                <input type="date" name="firstDate" />
+            </label>
+            <label>
+                <strong>Вторая дата:</strong>
+                <input type="date" name="secondDate" />
+            </label>
+            <button type="submit">Расчитать промежуток</button>
+            <p id="datecalc__result"></p>
+        </form>
+    </div>
+    <div class="container" id="timer">
+        <h2>Таймер</h2>
+        <a href="#datecalc">Калькулятор дат</a>
+        <div id="errorMessage" role="error"></div>
+        <button type="button" id="refresh">Сброс</button>
+        <h1 id="time">00:00</h1>
+        <div id="inputArea">
+            <input type="text" id="minutes" placeholder="Введите только минуты"><br>
+            <button type="button" id="breakBtn">Пуск</button>
+        </div>
+
+        <div id="pauseArea">
+            <button type="button" id="pauseBtn">Пауза</button>
+        </div>
+        <div id="resumeArea">
+            <button type="button" id="resumeBtn">Продолжить</button>
+        </div>
+    </div>
+</body>
+
+</html>
