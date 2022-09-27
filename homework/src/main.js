@@ -1,5 +1,8 @@
 import { diffDates, diffToHtml } from "./datecalc.js";
 import { formatError } from "./utils.js";
+import './timer.js'
+import './../styles/main.css';
+import './../sound/gong.mp3';
 
 const dateCalcForm = document.getElementById("datecalc");
 const dateCalcResult = document.getElementById("datecalc__result");
